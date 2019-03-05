@@ -1,0 +1,7 @@
+.page-wrapper {
+  overflow: auto;
+  width: 100%;
+  height: calc(100% - 42px);
+  position: absolute;
+  padding: 15px;
+}

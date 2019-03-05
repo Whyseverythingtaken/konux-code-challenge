@@ -4,9 +4,9 @@ import { Switch, Route, BrowserRouter, Redirect } from 'react-router-dom';
 
 // Components
 import RequestData from './components/RequestData';
-import Navigation from './components/Navigation';
 
 // Scenes
+import Root from './scenes/Root';
 
 // Store
 import { store } from './store';
@@ -18,6 +18,10 @@ class App extends React.PureComponent {
         <BrowserRouter>
           <div>
             <RequestData />
+            <Switch>
+              <Route exact path="/" component={Root} />
+              <Redirect from="/*" to="/" />
+            </Switch>
           </div>
         </BrowserRouter>
       </Provider>
