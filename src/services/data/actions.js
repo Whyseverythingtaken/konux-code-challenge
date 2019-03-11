@@ -5,7 +5,7 @@ import axios from 'axios';
 import { updateLoading } from '../loading/actions';
 
 // Api
-const API = 'http://konuxdata.getsandbox.com/data';
+const API = 'https://konuxdata.getsandbox.com/data';
 
 export function requestData(limit) {
   return async (dispatch) => {
